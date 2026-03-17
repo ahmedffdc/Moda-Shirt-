@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - MODA SHIRT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #020617; }
+        .dark-hero-pattern {
+            background-color: #020617;
+            background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .logo-glow {
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+            transition: filter 0.3s ease;
+        }
+        .logo-glow:hover {
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        .page-indicator {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75rem 0.5rem;
+            overflow-x: auto;
+            background: rgba(2, 6, 23, 0.98);
+            border-bottom: 1px solid rgba(244, 63, 94, 0.2);
+            z-index: 40;
+        }
+        .page-name {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+        .page-name.active {
+            background: rgba(244, 63, 94, 0.8);
+            color: white;
+        }
+        .page-name.inactive {
+            color: rgba(148, 163, 184, 0.7);
+        }
+        .page-name:hover {
+            color: #f43f5e;
+        }
+    </style>
+</head>
+<body class="text-slate-300 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="block logo-glow">
+                <img src="name-logo.webp" alt="شعار Moda Shirts" class="h-8 md:h-10 w-auto">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-10 font-bold text-sm uppercase tracking-widest text-slate-300">
+                <a href="index.html" class="hover:text-rose-500 transition">الرئيسية</a>
+                <a href="shop.html" class="hover:text-rose-500 transition">المتجر</a>
+                <a href="about.html" class="text-rose-500">من نحن</a>
+            </div>
+            
+            <!-- Desktop Button -->
+            <a href="contact.html" class="hidden md:inline-block bg-rose-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-rose-500 transition shadow-lg shadow-rose-900/20">تواصل معنا</a>
+        </div>
+        
+        <!-- Mobile Page Indicator -->
+        <div class="md:hidden page-indicator">
+            <a href="index.html" class="page-name" data-page="index">الرئيسية</a>
+            <a href="shop.html" class="page-name" data-page="shop">المتجر</a>
+            <a href="about.html" class="page-name active" data-page="about">من نحن</a>
+            <a href="contact.html" class="page-name" data-page="contact">اتصل بنا</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-32 bg-[#020617] border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-20">
+                    <h1 class="text-6xl font-black text-white mb-6">من نحن</h1>
+                    <div class="h-1 w-20 bg-rose-500 mx-auto rounded-full mb-8"></div>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        نحن في <span class="text-rose-500 font-bold">MODA SHIRT</span> متخصصون في تصميم وإنتاج تيشيرتات فاخرة بأعلى جودة
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-rose-500/50 transition transform hover:scale-105 duration-300">
+                        <div class="text-5xl font-black text-rose-500 mb-4">🎨</div>
+                        <h3 class="text-xl font-bold text-white mb-3">تصاميم فريدة</h3>
+                        <p class="text-slate-400 leading-relaxed">تصاميم حصرية مستوحاة من الأنمي والثقافة العالمية، كل قطعة فنية فريدة من نوعها وتعكس شخصيتك</p>
+                    </div>
+                    
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-rose-500/50 transition transform hover:scale-105 duration-300">
+                        <div class="text-5xl font-black text-rose-500 mb-4">✨</div>
+                        <h3 class="text-xl font-bold text-white mb-3">جودة عالية</h3>
+                        <p class="text-slate-400 leading-relaxed">قطن 100% فاخر من أفضل المصادر مع تطريز وطباعة احترافية متقدمة تدوم طويلاً</p>
+                    </div>
+                    
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-rose-500/50 transition transform hover:scale-105 duration-300">
+                        <div class="text-5xl font-black text-rose-500 mb-4">🚀</div>
+                        <h3 class="text-xl font-bold text-white mb-3">توصيل سريع</h3>
+                        <p class="text-slate-400 leading-relaxed">شحن سريع وآمن إلى جميع أنحاء الوطن مع ضمانات الحفاظ على الجودة والسلامة</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-rose-900/20 to-rose-600/10 border border-rose-500/30 rounded-3xl p-12 mb-12">
+                    <h2 class="text-3xl font-black text-white mb-6">😊 من نحن</h2>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-8">
+                        في <span class="text-rose-500 font-bold">MODA SHIRT</span>، نعتقد أن الملابس ليست مجرد قطع نرتديها، بل هي تعبير حقيقي عن شخصيتنا وشغفنا وهويتنا. 
+                        لذلك نختار بعناية فائقة كل تصميم ونختار أجود المواد لنقدم لك تجربة استثنائية تليق بتوقعاتك وأحلامك.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="inline-flex items-center gap-3 text-white font-bold text-lg">
+                            <span class="text-rose-500 text-2xl">✓</span> منتجات أصلية 100%
+                        </div>
+                        <div class="inline-flex items-center gap-3 text-white font-bold text-lg">
+                            <span class="text-rose-500 text-2xl">✓</span> ضمان الجودة والرضا
+                        </div>
+                        <div class="inline-flex items-center gap-3 text-white font-bold text-lg">
+                            <span class="text-rose-500 text-2xl">✓</span> دعم العملاء 24/7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl mb-12">
+                    <h3 class="text-2xl font-black text-rose-500 mb-6">📍 موقع متجرنا وساعات العمل</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- الخريطة -->
+                        <div class="flex flex-col gap-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.77!2d2.9606!3d36.7456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa510d0000001%3A0x1111111111111!2sMODA%20SHIRT%20-%20Bab%20Ezzouar!5e0!3m2!1sar!2sdz!4v1710681600" width="100%" height="400" style="border:0; border-radius: 1rem; aspect-ratio: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl"></iframe>
+                            <a href="https://maps.app.goo.gl/m3gQT9Q2UsQme4Df8" target="_blank" class="inline-block bg-rose-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-rose-500 transition text-center">
+                                <i class="fas fa-map-marker-alt" style="margin-left: 8px;"></i>افتح في Google Maps
+                            </a>
+                        </div>
+                        
+                        <!-- ساعات العمل -->
+                        <div class="bg-gradient-to-br from-rose-900/20 to-rose-600/10 border border-rose-500/30 p-6 rounded-xl">
+                            <h4 class="text-xl font-black text-rose-500 mb-4">🕒 ساعات العمل</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">السبت</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">الأحد</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">الاثنين</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">الثلاثاء</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">الأربعاء</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                                    <span class="text-slate-300 font-bold">الخميس</span>
+                                    <span class="text-slate-400">10:00 - 21:00</span>
+                                </div>
+                                <div class="flex justify-between items-center pt-2">
+                                    <span class="text-rose-500 font-bold">الجمعة</span>
+                                    <span class="text-rose-400 font-bold">16:00 - 21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-black text-rose-500 mb-4">📞 تواصل معنا</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <p class="text-slate-400 mb-2">الهاتف:</p>
+                            <a href="tel:+213777000000" class="text-rose-500 hover:text-rose-400 font-bold">+213 777 000 000</a>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 mb-2">البريد الإلكتروني:</p>
+                            <a href="mailto:info@moda-shirt.com" class="text-rose-500 hover:text-rose-400 font-bold">info@moda-shirt.com</a>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 mb-2">واتساب:</p>
+                            <a href="https://wa.me/213777000000" target="_blank" class="text-rose-500 hover:text-rose-400 font-bold">تحدث معنا مباشرة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 bg-[#020617] Footer">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <img src="logo-transparent.webp" alt="شعار Moda Shirts في التذييل" class="h-[180px] w-auto mx-auto mb-6 opacity-70">
+                <p class="text-slate-500 text-sm italic mb-8">تصميم خاص لمتجر MODA SHIRT - باب الزوار</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto mb-8 pb-8 border-b border-white/10">
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.facebook.com" target="_blank" class="text-slate-400 hover:text-blue-500 transition text-3xl" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-slate-400 hover:text-pink-500 transition text-3xl" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="text-slate-400 hover:text-black transition text-3xl" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/213777000000" target="_blank" class="text-slate-400 hover:text-green-500 transition text-3xl" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:info@moda-shirt.com" class="text-slate-400 hover:text-rose-500 transition text-3xl" title="البريد"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="about.html" class="text-slate-400 hover:text-rose-500 transition mx-3">من نحن</a>
+                <a href="contact.html" class="text-slate-400 hover:text-rose-500 transition mx-3">اتصل بنا</a>
+                <p class="text-slate-500 text-xs mt-4">© 2026 MODA SHIRT. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    <script>
+        // Swipe Detection and Page Navigation
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const pages = [
+            { name: 'index', url: 'index.html', label: 'الرئيسية' },
+            { name: 'shop', url: 'shop.html', label: 'المتجر' },
+            { name: 'about', url: 'about.html', label: 'من نحن' },
+            { name: 'contact', url: 'contact.html', label: 'اتصل بنا' }
+        ];
+        
+        function getCurrentPage() {
+            const currentPath = window.location.pathname;
+            return pages.find(p => currentPath.includes(p.url)) || pages[0];
+        }
+        
+        function updatePageIndicator() {
+            const currentPage = getCurrentPage();
+            document.querySelectorAll('.page-name').forEach(indicator => {
+                if (indicator.dataset.page === currentPage.name) {
+                    indicator.classList.add('active');
+                    indicator.classList.remove('inactive');
+                } else {
+                    indicator.classList.remove('active');
+                    indicator.classList.add('inactive');
+                }
+            });
+        }
+        
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            const currentPage = getCurrentPage();
+            const currentIndex = pages.findIndex(p => p.name === currentPage.name);
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - go to next page
+                    const nextIndex = (currentIndex + 1) % pages.length;
+                    window.location.href = pages[nextIndex].url;
+                } else {
+                    // Swipe right - go to previous page
+                    const prevIndex = (currentIndex - 1 + pages.length) % pages.length;
+                    window.location.href = pages[prevIndex].url;
+                }
+            }
+        }
+        
+        // Update page indicator on load
+        window.addEventListener('load', updatePageIndicator);
+        updatePageIndicator();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر - MODA SHIRT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #020617; }
+        .dark-hero-pattern {
+            background-color: #020617;
+            background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .logo-glow {
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+            transition: filter 0.3s ease;
+        }
+        .logo-glow:hover {
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        .page-indicator {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75rem 0.5rem;
+            overflow-x: auto;
+            background: rgba(2, 6, 23, 0.98);
+            border-bottom: 1px solid rgba(244, 63, 94, 0.2);
+            z-index: 40;
+        }
+        .page-name {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+        .page-name.active {
+            background: rgba(244, 63, 94, 0.8);
+            color: white;
+        }
+        .page-name.inactive {
+            color: rgba(148, 163, 184, 0.7);
+        }
+        .page-name:hover {
+            color: #f43f5e;
+        }
+    </style>
+</head>
+<body class="text-slate-300 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="block logo-glow">
+                <img src="name-logo.webp" alt="شعار Moda Shirts" class="h-8 md:h-10 w-auto">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-10 font-bold text-sm uppercase tracking-widest text-slate-300">
+                <a href="index.html" class="hover:text-rose-500 transition">الرئيسية</a>
+                <a href="shop.html" class="text-rose-500">المتجر</a>
+                <a href="about.html" class="hover:text-rose-500 transition">من نحن</a>
+            </div>
+            
+            <!-- Desktop Button -->
+            <a href="contact.html" class="hidden md:inline-block bg-rose-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-rose-500 transition shadow-lg shadow-rose-900/20">تواصل معنا</a>
+        </div>
+        
+        <!-- Mobile Page Indicator -->
+        <div class="md:hidden page-indicator">
+            <a href="index.html" class="page-name" data-page="index">الرئيسية</a>
+            <a href="shop.html" class="page-name active" data-page="shop">المتجر</a>
+            <a href="about.html" class="page-name" data-page="about">من نحن</a>
+            <a href="contact.html" class="page-name" data-page="contact">اتصل بنا</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 mt-12">
+                <h1 class="text-5xl md:text-6xl font-black text-white mb-4">متجرنا</h1>
+                <p class="text-xl text-slate-300">قريباً...</p>
+                <div class="h-1 w-20 bg-rose-500 mx-auto rounded-full mt-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 bg-[#020617] Footer">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <img src="logo-transparent.webp" alt="شعار Moda Shirts في التذييل" class="h-[180px] w-auto mx-auto mb-6 opacity-70">
+                <p class="text-slate-500 text-sm italic mb-8">تصميم خاص لمتجر MODA SHIRT - باب الزوار</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto mb-8 pb-8 border-b border-white/10">
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.facebook.com" target="_blank" class="text-slate-400 hover:text-blue-500 transition text-3xl" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-slate-400 hover:text-pink-500 transition text-3xl" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="text-slate-400 hover:text-black transition text-3xl" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/213777000000" target="_blank" class="text-slate-400 hover:text-green-500 transition text-3xl" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:info@moda-shirt.com" class="text-slate-400 hover:text-rose-500 transition text-3xl" title="البريد"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="about.html" class="text-slate-400 hover:text-rose-500 transition mx-3">من نحن</a>
+                <a href="contact.html" class="text-slate-400 hover:text-rose-500 transition mx-3">اتصل بنا</a>
+                <p class="text-slate-500 text-xs mt-4">© 2026 MODA SHIRT. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Swipe Detection and Page Navigation
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const pages = [
+            { name: 'index', url: 'index.html', label: 'الرئيسية' },
+            { name: 'shop', url: 'shop.html', label: 'المتجر' },
+            { name: 'about', url: 'about.html', label: 'من نحن' },
+            { name: 'contact', url: 'contact.html', label: 'اتصل بنا' }
+        ];
+        
+        function getCurrentPage() {
+            const currentPath = window.location.pathname;
+            return pages.find(p => currentPath.includes(p.url)) || pages[0];
+        }
+        
+        function updatePageIndicator() {
+            const currentPage = getCurrentPage();
+            document.querySelectorAll('.page-name').forEach(indicator => {
+                if (indicator.dataset.page === currentPage.name) {
+                    indicator.classList.add('active');
+                    indicator.classList.remove('inactive');
+                } else {
+                    indicator.classList.remove('active');
+                    indicator.classList.add('inactive');
+                }
+            });
+        }
+        
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+        
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            const currentPage = getCurrentPage();
+            const currentIndex = pages.findIndex(p => p.name === currentPage.name);
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - go to next page
+                    const nextIndex = (currentIndex + 1) % pages.length;
+                    window.location.href = pages[nextIndex].url;
+                } else {
+                    // Swipe right - go to previous page
+                    const prevIndex = (currentIndex - 1 + pages.length) % pages.length;
+                    window.location.href = pages[prevIndex].url;
+                }
+            }
+        }
+        
+        // Update page indicator on load
+        window.addEventListener('load', updatePageIndicator);
+        updatePageIndicator();
+    </script>
+
+</body>
+</html>
